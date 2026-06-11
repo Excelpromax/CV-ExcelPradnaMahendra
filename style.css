@@ -1,0 +1,226 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;}
+/* Body untuk background dan display flex untuk membuat cv berada di tengah */
+body{
+    background-color: rgb(68, 5, 34);
+    display: flex;
+    justify-content: center;
+    padding: 60px 40px;
+}
+/* CV Utama dispay semua kotak cv */
+.cv-utama {
+    width: 95%;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 0 4px 15px rgba(0,0,0,2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Kolom Kiri */
+
+.kolom-kiri{
+    width: 35%;
+    background-color: rgb(6, 6, 62);
+    padding: 40px 0px;
+}
+/* Gambar CV */
+.gambar-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,2);
+}
+/* Data Diri */
+.data-diri {
+    width: 100%;
+    background-color: rgb(147, 147, 222);
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-left: 30px solid #cd5a20;
+}
+.data-diri-list{
+    padding: 0 30px;
+    margin: 0;
+    color: white;
+}
+.data-diri-info{
+    margin-bottom: 15px;
+}
+.data-diri-info h3 {
+    font-size:20px;
+    font-weight : bold;
+    margin: 0 0 4px 0;
+}
+.data-diri-info p{
+    font-size:16px;
+    margin : 0;
+}
+.data-kontak {
+    width: 100%;
+    background-color: rgb(147, 147, 222);
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-left: 30px solid #cd5a20;
+}
+.daftar-kontak{
+    list-style: none;
+    padding: 0 30px;
+    margin: 0;
+}
+.daftar-kontak li{
+    margin-bottom: 10px;
+}
+.daftar-kontak li a{
+    padding: 6px 0px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: flex;   
+    align-items: center;
+    gap: 8px;
+    transition:all 0.3s ease;
+}
+.daftar-kontak li a img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.daftar-kontak li a:hover{
+    color:rgb(194, 224, 93);
+    transform: translateX(8px);
+    text-decoration: underline;
+
+}
+
+/* Semua Kolom kanan */
+
+.kolom-kanan{
+    width: 65%;
+    padding:0;
+}
+.header-nama{
+    background-color: #cd5a20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 30px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header-nama h1{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.header-nama h2{
+    font-size: 30px;
+    color: rgb(6, 6, 62);
+    margin: 0;
+
+}
+
+/* Tentang saya */
+
+.Tentang-saya{
+    padding: 15px;
+    padding-left:20px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+.Tentang-saya h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cd5a20;
+}
+.Tentang-saya p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+/* Pendidikan */
+
+.pendidikan{
+    padding: 15px;
+    padding-left:20px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+.pendidikan h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cd5a20;
+}
+
+/* Buat Tabel */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid #000000;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 18px;
+}
+th{
+    background-color:  rgb(6, 6, 62);
+    color: rgb(255, 255, 255);
+}
+.pengalaman-kerja{
+    padding: 15px;
+    padding-left:20px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+.pengalaman-kerja h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cd5a20;
+}
+.pengalaman-kerja p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    font-weight: bold;
+}
+.pengalaman-kerja ul{
+    list-style: disc;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.pengalaman-kerja ul li{
+    padding: 6px 0px;
+    font-size: 20px;
+    color: rgb(0, 0, 0); 
+    align-items: center;
+}
+.keahlian{
+    padding: 15px;
+    margin-bottom: 400px;
+    padding-left:20px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+.keahlian h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cd5a20;
